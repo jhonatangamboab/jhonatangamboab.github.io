@@ -1,0 +1,572 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Rubik+Dirt&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;   
+    background-color: #444b66;
+}
+
+#seleccionar-mascota {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo {
+    color: rgb(255, 255, 255);
+    width: 278px;
+    height: 50px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: 'Rubik Dirt', cursive;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.subtitulo {color: white;font-size: 20px;display: flex;justify-content: center;margin-bottom: 29px;}
+
+.tarjetas, .tarjetas-ataques{
+    display: flex;
+        
+}
+
+.tarjeta-de-criatura{
+    
+width: 145px;
+    
+height: 228px;
+    
+background: #293462;
+    
+padding: 10px;
+    
+box-sizing: border-box;
+    
+margin: 1px;
+    
+border: 2px solid #697299;
+    
+border-radius: 10px;
+    
+color: #ccd1e7;
+    
+display: flex;
+    
+align-items: center;
+    
+flex-direction: column;
+}
+
+.tarjeta-de-criatura img{
+    width: 126px;
+    border-radius: 10px;
+}
+
+.div-poderes{
+    margin-top: 4px;
+    font-size: 15px;
+}
+
+.cuadro-criatura{
+    width: 156px;
+    height: 232px;
+    background: #0a0b10;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border: 2px solid #d8dbeb;
+    border-radius: 11px;
+    color: #ccd1e7;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 15px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* .cuadro-criatura{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 15px;
+    justify-content: center;
+    width: 190px;
+} */
+
+.imagenSeleccionada{
+    width: 143px;
+    border-radius: 10px;
+}
+
+#mascota-jugador, #mascota-enemigo{
+    font-size: 21px;
+    margin-top: 0px;
+}
+
+input{
+    display: none;
+}
+
+input:hover + label{
+    background-color:  #8f98bb;
+    border: 1px solid #a4aac2;
+       
+}
+
+input:checked + label {
+    background-color:  #d9ddf0;
+    border: 1px solid #293462;
+    color: #293462;
+}
+
+
+#boton-mascota{
+    width: 115px;
+    height: 40px;
+    border-radius: 10px;
+    background: rgb(168, 84, 4);
+    padding: 10px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border: 1px solid rgba(139, 67, 19, 0.877);
+    color: rgb(228, 218, 208);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+}
+
+#subtitulo-ataques{
+
+background-color: #182041;
+
+border-radius: 20px;
+
+height: 178px;
+
+width: 616px;
+
+display: flex;
+
+flex-direction: column;
+
+align-items: center;
+
+border: 2px solid white;
+}
+
+#seleccionar-ataque{
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton-de-ataque{
+    background: rgb(168, 84, 4);
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid rgba(139, 67, 19, 0.877);
+    width: 106px;
+    height: 87px;
+    color: rgb(228, 218, 208);
+    font-family: 'Poppins', sans-serif;
+    margin-right: 5px;
+    margin-left: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+}
+
+.tituloAtaque{
+    margin-top: 1px;
+    margin-bottom: 9px;
+    font-size: 16px;
+}
+
+.simboloAtaque{
+    margin-top: 0px;
+    margin-bottom: 2px;
+    font-size: 33px;
+}
+
+
+.boton-de-ataque:hover{
+    background: rgb(228, 218, 208);
+    color: rgb(168, 84, 4);     
+}
+
+
+#vs{
+    width: 80px;
+    height: 80px;
+    color: #293462;
+    border: 2px solid #293462;
+    
+    background: white;
+    
+    margin-top: 80px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+    justify-content: center;
+    font-size: 30px;
+}
+
+#resultado {
+    width: 140px;
+    height: 232px;
+    color: #293462;
+    border: 2px solid #293462;
+    background: white;
+    margin-top: 109px;
+    border-radius: 20px;
+    display: flex;
+    font-size: 14px;
+    flex-direction: column;
+    align-items: center;
+}
+
+#resultadoFinal{
+    width: 305px;
+    height: 59px;
+    color: #293462;
+    border: 2px solid #293462;
+    background: white;
+    margin-top: 16px;
+    border-radius: 20px;
+    display: flex;
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+#boton-Reiniciar{
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #1c1f2c;
+    display: flex;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid white;
+}
+
+#boton-Reiniciar:hover{
+    background-color: #acb2cc;
+    color: #292f47;
+}
+
+.ataques{
+    display: grid;
+    grid-template-columns: 195px 195px 195px;
+    color:white;
+    /* background: rgb(168, 84, 4); */
+    /* border: 1px solid rgba(238, 157, 137, 0.993); */
+    /* margin-top: 0px; */
+    border-radius: 10px;
+    /* background: #293462; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.victorias{
+    font-size: 15px;
+    margin-bottom: 7px;
+    background: white;
+    color: #293462;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    width: 98px;
+    align-items: center;
+}
+
+#vidas-jugador, #vidas-oponente{font-size: 32px;}
+
+.ataques-jugador, .ataques-oponente{
+    display: flex;
+    /* grid-row-end: initial; */
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+.mostrarCriatura{
+    text-decoration: underline;
+    font-size: 13px;
+}
+
+#ver-mapa{
+    
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* #mapa{
+    border:2px solid white;
+    margin-bottom: 20px;
+} */
+
+.controlBotones{
+    border: 2px solid white;
+    display: flex;
+    /* margin: 0px; */
+    border-radius: 10px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.botonVerticales{
+    display: flex;
+    flex-direction: row;
+    margin: -8px;
+}
+
+.boton{
+    margin: 11px;
+    margin-top: 3px;
+    margin-bottom: 13px;
+    width: 50px;
+    height: 50px;
+    background: #24244c;
+    font-size: 33px;
+    color: #fcfcfd;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+
+@media (max-width:560px){
+    .tarjetas, .tarjetas-ataques{
+        flex-direction:column;
+    }
+
+    .boton-de-ataque{
+        
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    
+    #mensajes {
+        width: 250px;
+        height: 85px;      
+        
+    }
+
+    .ataques {
+        display: grid;
+        grid-template-columns: 150px 150px;
+        font-size: small;
+    }
+}
+
+
+@media (max-width:300px){
+    .controlBotones{
+        display: flex;        
+        flex-direction: column;
+        align-items: center;
+        border: 2px solid white;
+    }
+
+    .boton{
+        /* margin: 9px; */
+        margin-left: 9px;
+        margin-right: 9px;
+        margin-top: 4px;
+        margin-bottom: 8px;
+        width: 30px;
+        height: 30px;
+        background: #24244c;
+        font-size: 20px;
+        color: #fcfcfd;
+        border-radius: 10px;
+        border: 1px solid white;
+    }
+}
+
+
+@media (max-width:414px){
+
+   
+    .titulo {
+      
+margin-bottom: 1px;
+      
+margin-top: 2px;
+    }
+    
+    .subtitulo {
+        margin-bottom: 0px;
+        }
+    
+    .tarjetas, .tarjetas-ataques{
+        display: flex;
+        flex-direction: row;
+    }
+     #contenedorTarjetas{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .tarjeta-de-criatura{
+    
+        width: 145px;            
+        height: 170px;            
+        margin: 2px;                       
+        display: flex;            
+        align-items: center;            
+        flex-direction: column;
+        }
+        
+    .tarjeta-de-criatura img{
+        width: 70px;
+        border-radius: 10px;
+    }
+        
+
+    #subtitulo-ataques {
+        /* background-color: #182041; */
+        /* border-radius: 20px; */
+        height: 110px;
+        width: 304px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 2px solid white;
+        margin-bottom: 10px;
+    }
+
+    .boton-de-ataque {
+        padding: 10px;
+        box-sizing: border-box;
+        width: 49px;
+        height: 52px;
+        color: rgb(228, 218, 208);
+        font-family: 'Poppins', sans-serif;
+        margin-right: 5px;
+        margin-left: 5px;
+        display: flex;
+        font-size: 24px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ataques {
+        display: grid;
+        grid-template-columns: 195px 191px 195px;
+        color: white;
+        background: #293462;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #mensajes {
+        width: 178px;
+        height: 219px;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .victorias {
+        margin-bottom: 22px;
+        margin-left: 33px;
+        margin-right: 33px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 15px;
+        width: 105px;
+        height: 125px;
+        align-items: center;
+        font-size: 22px;
+        justify-content: center;
+    }
+
+    #vidas-jugador, #vidas-oponente {
+        font-size: 55px;
+    }
+
+    .cuadro-criatura {
+        text-align: center;
+        font-size: 1px;
+        justify-content: center;
+        width: 126px;
+        height: 147px;
+        margin-left: -13px;
+        margin-right: -13px;
+    }
+
+    .imagenSeleccionada {
+        width: 77px;
+        border-radius: 10px;
+    }
+
+    #vs {
+        width: 100px;
+        height: 100px;
+        margin-top: 20px;
+    }
+
+    #resultado {
+        width: 209px;
+        height: 202px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        border-radius: 20px;
+        display: flex;
+        font-size: 12px;
+        flex-direction: column;
+    }
+
+    .ataques-jugador {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: -9px;
+    }
+    .ataques-oponente {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        margin-bottom: -8px;
+    }
+
+    #boton-Reiniciar {
+        margin-top: -8px;
+    }
+
+    #resultadoFinal {
+      
+    margin-top: 0px;
+    }
+
+    #seleccionar-ataque {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mostrarCriatura {
+        text-decoration: underline;
+        font-size: 10px;
+        font: menu;
+    }
+
+}
